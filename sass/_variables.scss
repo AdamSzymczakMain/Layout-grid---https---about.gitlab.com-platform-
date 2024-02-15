@@ -48,3 +48,12 @@ $width-x-large: 800px;
 $width-xx-large: 1000px;
 $width-xxx-large: 1200px;
 $width-xxxx-large: 1400px;
+
+//mixin
+
+@mixin grid-solutions($columns: auto, $rows: auto, $gap: 0) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
