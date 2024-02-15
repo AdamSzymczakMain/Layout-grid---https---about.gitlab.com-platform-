@@ -40,8 +40,6 @@ $padding-xx-large: 2.5em;
 
 // width
 
-$image-trip-width-small: 300px;
-$image-trip-width-medium: 350px;
 $width-medium: 450px;
 $width-large: 650px;
 $width-x-large: 800px;
@@ -57,3 +55,5 @@ $width-xxxx-large: 1400px;
   grid-template-rows: $rows;
   gap: $gap;
 }
+
+@mixin center-text();
