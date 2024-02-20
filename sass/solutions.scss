@@ -44,9 +44,6 @@ h2 {
     );
     border-radius: 0 0px 110px 0;
   }
-
-  &:link {
-  }
 }
 
 .button {
@@ -74,5 +71,45 @@ h2 {
     margin-top: $margin-small;
     font-size: $font-size-base;
     font-weight: 400;
+  }
+}
+
+.pricing-plans {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-xxx-large;
+  border: 2px solid #eee;
+
+  &-icon {
+    font-size: $font-size-xlarge;
+  }
+
+  &-h {
+    font-size: $font-size-large;
+    margin-top: $margin-small;
+    margin-right: $margin-large;
+  }
+
+  &-btn {
+    font-size: $font-size-base;
+    min-width: 230px;
+    border: none;
+    padding: $padding-small;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  &-ultimate {
+    background: linear-gradient(
+      93.83deg,
+      rgba(199, 177, 254, 0.75) 7.27%,
+      rgba(255, 212, 216, 0.75) 105.33%
+    );
+  }
+
+  &-premium {
+    margin-top: $margin-small;
+    background-color: #eee7fd;
   }
 }
