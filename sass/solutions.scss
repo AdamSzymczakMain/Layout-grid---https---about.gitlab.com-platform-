@@ -1,5 +1,25 @@
 @import "variables";
 
 .solutions {
+  margin: $margin-auto;
   width: $width-xxx-large;
+}
+
+h2 {
+  font-size: $font-size-xx-large;
+  max-width: 50%;
+}
+
+.subtitled-div {
+  @include center($jus-cont: space-between, $txt-al: none);
+  margin-top: $margin-large;
+}
+
+.subtitled {
+  font-size: $font-size-large;
+  max-width: 70%;
+}
+
+.button {
+  @include button-reset;
 }
