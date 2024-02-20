@@ -81,6 +81,7 @@ h2 {
   align-items: center;
   padding: $padding-xxx-large;
   border: 2px solid #eee;
+  border-radius: 0 0 110px 0;
 
   &-icon {
     font-size: $font-size-xlarge;
@@ -101,6 +102,15 @@ h2 {
   }
 
   &-ultimate {
+    background: linear-gradient(90.25deg, #e3d6ff 0.05%, #fcc 115.41%);
+  }
+
+  &-premium {
+    margin-top: $margin-small;
+    background-color: #eee7fd;
+  }
+
+  &-ultimate:hover {
     background: linear-gradient(
       93.83deg,
       rgba(199, 177, 254, 0.75) 7.27%,
@@ -108,8 +118,7 @@ h2 {
     );
   }
 
-  &-premium {
-    margin-top: $margin-small;
-    background-color: #eee7fd;
+  &-premium:hover {
+    background: #e3d6ff;
   }
 }

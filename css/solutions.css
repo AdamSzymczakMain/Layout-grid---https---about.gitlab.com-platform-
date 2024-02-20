@@ -43,7 +43,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
   align-items: stretch;
   margin-top: 1.75rem;
 }
@@ -97,6 +97,7 @@ h2 {
   align-items: center;
   padding: 3em;
   border: 2px solid #eee;
+  border-radius: 0 0 110px 0;
 }
 .pricing-plans-icon {
   font-size: 2.3em;
@@ -114,9 +115,15 @@ h2 {
   border-radius: 10px 10px 10px 10px;
 }
 .pricing-plans-ultimate {
-  background: linear-gradient(93.83deg, rgba(199, 177, 254, 0.75) 7.27%, rgba(255, 212, 216, 0.75) 105.33%);
+  background: linear-gradient(90.25deg, #e3d6ff 0.05%, #fcc 115.41%);
 }
 .pricing-plans-premium {
   margin-top: 1rem;
   background-color: #eee7fd;
+}
+.pricing-plans-ultimate:hover {
+  background: linear-gradient(93.83deg, rgba(199, 177, 254, 0.75) 7.27%, rgba(255, 212, 216, 0.75) 105.33%);
+}
+.pricing-plans-premium:hover {
+  background: #e3d6ff;
 }
