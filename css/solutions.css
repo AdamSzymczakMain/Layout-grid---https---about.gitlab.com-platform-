@@ -28,6 +28,37 @@ h2 {
   max-width: 70%;
 }
 
+.button-sub {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+}
+
+.gird-solutions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  align-items: stretch;
+  margin-top: 1.75rem;
+}
+
+.sol-grid-div {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f3fe;
+}
+.sol-grid-div:hover {
+  background-color: linear-gradient(93.83deg, rgba(199, 177, 254, 0.4) 7.27%, rgba(255, 212, 216, 0.4) 105.33%);
+  border-radius: 0 10px 10px 0;
+}
+
 .button {
   background: none;
   border: none;
@@ -37,4 +68,24 @@ h2 {
   cursor: pointer;
   outline: inherit;
   text-decoration: none;
+  text-align: start;
+  padding: 1.5em;
+  min-height: 260px;
+}
+.button-icon {
+  font-size: 2em;
+}
+.button-h {
+  margin-top: 1.25rem;
+  font-size: 1.5em;
+  color: #555;
+}
+.button-text-sol {
+  font-size: 1em;
+  margin-top: 1rem;
+}
+.button-arrow {
+  margin-top: 1rem;
+  font-size: 1.5em;
+  font-weight: 400;
 }

@@ -20,6 +20,56 @@ h2 {
   max-width: 70%;
 }
 
+.button-sub {
+  @include button-reset;
+}
+
+.gird-solutions {
+  @include grid-3x3;
+
+  margin-top: $margin-large;
+}
+
+.sol-grid-div {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f3fe;
+
+  &:hover {
+    background-color: linear-gradient(
+      93.83deg,
+      rgba(199, 177, 254, 0.4) 7.27%,
+      rgba(255, 212, 216, 0.4) 105.33%
+    );
+    border-radius: 0 10px 10px 0;
+  }
+}
+
 .button {
   @include button-reset;
+  text-align: start;
+  padding: $padding-large;
+  min-height: 260px;
+
+  &-icon {
+    font-size: $font-size-large;
+  }
+
+  &-h {
+    margin-top: $margin-base;
+    font-size: $font-size-base;
+    color: $color-text;
+  }
+
+  &-text-sol {
+    font-size: $font-size-small;
+    margin-top: $margin-small;
+  }
+
+  &-arrow {
+    margin-top: $margin-small;
+    font-size: $font-size-base;
+    font-weight: 400;
+  }
 }
